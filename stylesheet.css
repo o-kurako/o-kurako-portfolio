@@ -31,7 +31,14 @@ body {
     color: white;
     /* 好みで */
     text-decoration: none;
+    transition: color 0.3s ease;
 }
+
+.header-list a:hover {
+    color: #4f3171;
+    /* ホバー時の色（お好みで） */
+}
+
 
 main img {
     width: 100%;
