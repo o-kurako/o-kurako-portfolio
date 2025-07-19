@@ -247,10 +247,10 @@ main img {
     display: block;
 }
 
-
-
-
-
+.banner-uunder-text {
+    text-align: center;
+    margin-top: 60px;
+}
 
 .footer {
     background-color: rgb(196, 131, 202);
