@@ -274,3 +274,25 @@ main img {
     align-items: center;
     margin-top: 40px;
 }
+
+.tool-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tool-icons img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.tool-icons img:hover {
+    transform: scale(1.1);
+}
+
+.tools-container .top-anchor {
+    text-align: right;
+    margin-right: 40px;
+}
