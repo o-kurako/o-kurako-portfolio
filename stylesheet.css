@@ -39,6 +39,26 @@ body {
     /* ホバー時の色（お好みで） */
 }
 
+.main-visual {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* 必要なら固定の高さもOK */
+}
+
+.bg-image {
+    width: 100%;
+    display: block;
+}
+
+.main-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: auto;
+}
 
 main img {
     width: 100%;
