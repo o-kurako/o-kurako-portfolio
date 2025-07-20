@@ -11,39 +11,31 @@ body {
     height: 80px;
     width: 100%;
     display: flex;
-    /* 横並びにする */
     align-items: center;
-    /* 縦中央揃え */
     justify-content: space-between;
-    /* 左右に分ける */
     padding: 0 20px;
-    /* 左右余白 */
+
 }
 
 .header-icon img {
     height: 50px;
-    /* アイコンの高さ調整 */
 }
 
 .header-list a {
     margin-left: 20px;
-    /* リンク間の余白 */
     color: white;
-    /* 好みで */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .header-list a:hover {
     color: #4f3171;
-    /* ホバー時の色（お好みで） */
 }
 
 .main-visual {
     position: relative;
     width: 100%;
     height: auto;
-    /* 必要なら固定の高さもOK */
 }
 
 .bg-image {
@@ -62,41 +54,25 @@ body {
 
 main img {
     width: 100%;
-    /* 親要素幅に合わせる */
     height: auto;
-    /* 縦横比維持 */
 }
 
 .main-list {
     display: flex;
     justify-content: center;
-    /* 中央寄せ */
     align-items: center;
-    /* 縦中央揃え（必要なら） */
     gap: 80px;
-    /* リンク間の余白 */
     margin: 60px 0;
-    /* 不要なら消す */
     color: white;
 }
 
-.services-container {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
+.main-list-about {
     display: flex;
-    flex-direction: column;
-    /* 縦並び */
     justify-content: center;
     align-items: center;
+    gap: 80px;
     margin: 60px 0;
-}
-
-.ribbon-text {
-    color: #3a0c0c;
-    font-size: 1.5em;
-    font-weight: bold;
+    color: white;
 }
 
 .menu-btn {
@@ -108,18 +84,46 @@ main img {
     border-radius: 5px;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    /* 影を追加 */
     transition: all 0.3s ease;
-    /* 背景色だけでなくtransformにも適用 */
+}
+
+.top-anchor {
+    color: #4f3171;
+}
+
+.top-anchor {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #4f3171;
+}
+
+.top-anchor:hover {
+    color: white;
+}
+
+.services-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.ribbon-text {
+    color: #3a0c0c;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .menu-btn:hover {
     background-color: #c05c8d;
-    /* ホバー時の色変更 */
     transform: translateY(-2px);
-    /* 浮き上がる動き */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-    /* ホバー時に影を強調 */
 }
 
 .video-editing-section {
@@ -133,9 +137,7 @@ main img {
     align-items: flex-start;
     justify-content: center;
     max-width: 1000px;
-    /* 例：幅を制限 */
     margin: 0 auto;
-    /* 中央寄せ */
 }
 
 .services {
@@ -153,9 +155,7 @@ main img {
     list-style: none;
     padding: 0;
     text-align: left;
-    /* リスト内は左揃え */
     margin: 0 auto;
-    /* ul自体を中央寄せ */
 }
 
 .services li {
@@ -164,7 +164,6 @@ main img {
 
 .video-digest {
     flex: 2;
-    /* 右側を広めに */
     min-width: 300px;
 }
 
@@ -183,7 +182,6 @@ main img {
 
 .banner-samples img {
     width: 250px;
-    /* 好みで調整 */
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -191,9 +189,7 @@ main img {
 .banner-samples {
     display: flex;
     flex-direction: column;
-    /* 縦並び */
     gap: 20px;
-    /* ↓これを追加！ */
     flex: 1;
     min-width: 250px;
     max-width: 300px;
@@ -207,16 +203,12 @@ main img {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    /* リストとサンプル画像の間隔 */
     flex-wrap: wrap;
-    /* スマホ対応 */
     margin: 0 auto;
-    /* 中央寄せ */
 }
 
 .sns-samples img {
     width: 150px;
-    /* 好みで調整 */
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -224,16 +216,13 @@ main img {
 .img-sns {
     position: relative;
     width: fit-content;
-    /* 中身に合わせて幅が決まる */
     height: 200px;
-    /* 高さは画像のサイズに合わせて調整 */
     margin-bottom: 150px;
 }
 
 .sns-img {
     position: absolute;
     width: 150px;
-    /* 画像サイズをここで統一 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     transition: transform 0.3s ease;
@@ -265,11 +254,8 @@ main img {
 .sns-video {
     width: 50%;
     max-width: 320px;
-    /* お好みで調整 */
     aspect-ratio: 9 / 16;
-    /* 縦長の比率 */
     object-fit: cover;
-    /* 必要に応じて調整（containでもOK） */
     border-radius: 8px;
     display: block;
 }
