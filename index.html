@@ -23,7 +23,10 @@
     <main>
         <div class="main-visual">
             <img src="./images/main-visual.png" alt="メイン画像">
-            <img src="./images/main-logo.svg" alt="ロゴ" class="main-logo">
+            <picture>
+                <source srcset="./images/main-logo-responsive.svg" media="(max-width: 768px)">
+                <img src="./images/main-logo-responsive.svg" alt="ロゴ" class="main-logo" width="300px" height: auto;>
+            </picture>
         </div>
         <section class="Available">
             <div class="main-list">
