@@ -232,7 +232,6 @@ main img {
     transition: transform 0.3s ease;
 }
 
-/* 各画像のずらし具合 */
 .img1 {
     top: 0;
     left: 0;
@@ -402,22 +401,24 @@ html {
         height: 40px;
     }
 
+    .main-visual {
+        position: relative;
+    }
+
     .main-logo {
-        width: 200px;
+        width: 160px;
         height: auto;
     }
 
     .header {
-        height: 40px;
+        height: 30px;
     }
 
     .main-list,
     .main-list-about {
         flex-direction: column;
         gap: 20px;
-        /* ←ここを小さくして間隔を狭める */
         margin: 20px 0;
-        /* 必要ならmarginも少し狭めてOK */
     }
 
     .menu-btn {
@@ -425,7 +426,6 @@ html {
         max-width: 300px;
         text-align: center;
         padding: 12px 20px;
-        /* パディングも調整可能 */
     }
 
     .services-content {
@@ -443,6 +443,14 @@ html {
     .services,
     .video-digest {
         max-width: 100%;
+    }
+
+    .img-sns-desktop {
+        display: none;
+    }
+
+    .sns-samples img {
+        width: 120px;
     }
 
     .sns-samples {
@@ -486,70 +494,77 @@ html {
         /* スマホでは幅広めに */
         text-align: center;
     }
-}
 
-@media screen and (max-width: 1024px) {
-    .main-tagline {
-        font-size: 2.4rem;
+    .marker {
+        font-size: 25px;
+    }
+
+    .main-list-about {
         gap: 10px;
     }
 
-    .tagline-name {
-        font-size: 2.2rem;
-    }
+    @media screen and (max-width: 1024px) {
+        .main-tagline {
+            font-size: 2.4rem;
+            gap: 10px;
+        }
 
-    .tagline-name-phonetic-reading {
-        font-size: 1.4rem;
-    }
+        .tagline-name {
+            font-size: 2.2rem;
+        }
 
-    .header {
-        height: 40px;
-    }
+        .tagline-name-phonetic-reading {
+            font-size: 1.4rem;
+        }
 
-    .services-content {
-        flex-direction: column;
-        align-items: center;
-    }
+        .header {
+            height: 40px;
+        }
 
-    .video-digest iframe {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
+        .services-content {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .services,
-    .video-digest {
-        max-width: 100%;
-    }
+        .video-digest iframe {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
 
-    .sns-samples {
-        margin-top: 40px;
-    }
+        .services,
+        .video-digest {
+            max-width: 100%;
+        }
 
-    .banner-samples {
-        margin-top: 40px;
-    }
+        .sns-samples {
+            margin-top: 40px;
+        }
 
-    .main-tagline {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 2rem;
-    }
+        .banner-samples {
+            margin-top: 40px;
+        }
 
-    .tagline-name {
-        font-size: 2rem;
-    }
+        .main-tagline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2rem;
+        }
 
-    .tagline-name-phonetic-reading {
-        font-size: 1.2rem;
-    }
+        .tagline-name {
+            font-size: 2rem;
+        }
 
-    .okurako-title {
-        font-size: 16px;
-        text-align: center;
+        .tagline-name-phonetic-reading {
+            font-size: 1.2rem;
+        }
+
+        .okurako-title {
+            font-size: 16px;
+            text-align: center;
+        }
     }
-}
 
 }
